@@ -1,0 +1,49 @@
+You are an enterprise software architect.  
+Generate a complete scaffold for "ShieldGate v2.0 – Smart Colony Security Platform".  
+Do NOT write implementation code. Only produce:
+
+1. 📂 Folder Structure  
+   - Backend (Node.js + Express + Socket.IO)  
+   - Frontend (React + PWA + Google Maps + GA4)  
+   - Deployment configs (Netlify/Vercel, Render/Railway, Docker)  
+   - Docs (README, API spec, DB schema, roadmap)  
+
+2. 📡 API Contract (OpenAPI/Swagger style)  
+   - Auth (OTP login with hashed OTP)  
+   - Visitor workflow (Register → WhatsApp Approval → QR Pass → Gate Scan → Entry Log)  
+   - Real‑time events (Socket.IO channels for VisitorRegistered, ResidentApproved, VisitorEntered, EmergencyAlert)  
+   - Multi‑tenant support (tenantId, societyId in all payloads)  
+
+3. 🗄️ Database Schema (MongoDB Atlas)  
+   Collections:  
+   - Residents  
+   - Visitors  
+   - VisitorPasses (QR codes)  
+   - Approvals  
+   - EntryLogs  
+   - WhatsAppEvents  
+   - AuditTrails (action, actor, ipAddress, deviceInfo, timestamp)  
+   - EmergencyAlerts  
+   - AnalyticsEvents  
+   - Tenants  
+
+4. 🔐 Security Layer  
+   - JWT auth  
+   - AES‑256 encryption for sensitive fields  
+   - bcrypt hashed OTP with expiry  
+   - Helmet + Rate limiting  
+   - Audit trail logging  
+
+5. 🚀 Deployment Pipeline  
+   - Environment variable strategy for API keys (WhatsApp, Google Maps, GA4)  
+   - CI/CD hooks for Netlify/Vercel (frontend) and Render/Railway (backend)  
+   - Dockerfile + YAML configs  
+
+Deliverables:  
+- Full folder tree with README placeholders  
+- API contract in OpenAPI YAML format (no code)  
+- Database schema in JSON format (no code)  
+- Security checklist  
+- Deployment checklist  
+
+Output must be **architecture only**, no implementation code.
