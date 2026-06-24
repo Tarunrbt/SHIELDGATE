@@ -1,6 +1,7 @@
-// Platform-level users are not society scoped
+// ShieldGate v2.1 - Tenant & Society Scope Validation Middleware
 
 function validateScope(user) {
+  // Platform-level users (Super Admins) are not society scoped
   if (user.role === "SUPER_ADMIN") {
     return {
       tenantId: null,
@@ -8,6 +9,7 @@ function validateScope(user) {
     };
   }
 
+  // Tenant-scoped users must have tenantId and societyId
   if (!user.tenantId || !user.societyId) {
     throw new Error(
       "Tenant-scoped users must have tenantId and societyId"
