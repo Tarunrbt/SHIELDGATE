@@ -1,0 +1,9 @@
+{
+  "_id": "ObjectId",
+  "tenantId": "String",
+  "societyId": "String",
+  "visitorId": "ObjectId",
+  "residentId": "ObjectId",
+  "approvalStatus": "Pending",
+  "approvedAt": "Date"
+}
