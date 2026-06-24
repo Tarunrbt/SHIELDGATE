@@ -1,0 +1,148 @@
+SHIELDGATE-V2/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+├── .env.example
+├── docker-compose.yml
+│
+├── docs/
+│   ├── README.md
+│   ├── architecture/
+│   │   ├── system-overview.md
+│   │   ├── multi-tenant-design.md
+│   │   ├── security-architecture.md
+│   │   ├── socket-events.md
+│   │   └── deployment-architecture.md
+│   │
+│   ├── api/
+│   │   ├── openapi.yaml
+│   │   ├── authentication.md
+│   │   ├── visitor-flow.md
+│   │   ├── websocket-events.md
+│   │   └── error-codes.md
+│   │
+│   ├── database/
+│   │   ├── collections.md
+│   │   ├── indexes.md
+│   │   └── mongodb-schema.json
+│   │
+│   ├── roadmap/
+│   │   ├── v2.0-roadmap.md
+│   │   ├── sprint-plan.md
+│   │   └── release-notes.md
+│   │
+│   └── compliance/
+│       ├── privacy-policy.md
+│       ├── data-retention.md
+│       └── audit-requirements.md
+│
+├── Backend/
+│   ├── README.md
+│   │
+│   ├── src/
+│   │   ├── server/
+│   │   ├── config/
+│   │   ├── middleware/
+│   │   ├── routes/
+│   │   │   ├── auth/
+│   │   │   ├── visitors/
+│   │   │   ├── approvals/
+│   │   │   ├── residents/
+│   │   │   ├── entrylogs/
+│   │   │   ├── emergency/
+│   │   │   ├── analytics/
+│   │   │   └── tenants/
+│   │   │
+│   │   ├── controllers/
+│   │   ├── services/
+│   │   │   ├── otp/
+│   │   │   ├── whatsapp/
+│   │   │   ├── qr/
+│   │   │   ├── socket/
+│   │   │   ├── analytics/
+│   │   │   └── encryption/
+│   │   │
+│   │   ├── models/
+│   │   ├── validators/
+│   │   ├── repositories/
+│   │   ├── events/
+│   │   ├── jobs/
+│   │   ├── sockets/
+│   │   ├── utils/
+│   │   └── constants/
+│   │
+│   ├── tests/
+│   │   ├── unit/
+│   │   ├── integration/
+│   │   └── security/
+│   │
+│   ├── swagger/
+│   ├── logs/
+│   └── Dockerfile
+│
+├── Frontend/
+│   ├── README.md
+│   │
+│   ├── public/
+│   │   ├── manifest.json
+│   │   ├── icons/
+│   │   ├── offline/
+│   │   └── robots.txt
+│   │
+│   ├── src/
+│   │   ├── app/
+│   │   ├── pages/
+│   │   │   ├── Auth/
+│   │   │   ├── Visitor/
+│   │   │   ├── Resident/
+│   │   │   ├── SecurityGate/
+│   │   │   ├── Emergency/
+│   │   │   ├── Analytics/
+│   │   │   └── Admin/
+│   │   │
+│   │   ├── components/
+│   │   ├── layouts/
+│   │   ├── hooks/
+│   │   ├── services/
+│   │   ├── store/
+│   │   ├── routes/
+│   │   ├── contexts/
+│   │   ├── maps/
+│   │   ├── sockets/
+│   │   ├── pwa/
+│   │   ├── analytics/
+│   │   ├── assets/
+│   │   └── utils/
+│   │
+│   ├── tests/
+│   ├── vite.config
+│   ├── tailwind.config
+│   └── Dockerfile
+│
+├── infrastructure/
+│   ├── docker/
+│   │   ├── backend/
+│   │   └── frontend/
+│   │
+│   ├── render/
+│   │   └── render.yaml
+│   │
+│   ├── railway/
+│   │   └── railway.json
+│   │
+│   ├── netlify/
+│   │   └── netlify.toml
+│   │
+│   ├── vercel/
+│   │   └── vercel.json
+│   │
+│   └── github-actions/
+│       ├── frontend-ci.yml
+│       ├── backend-ci.yml
+│       └── deployment.yml
+│
+└── scripts/
+    ├── backup/
+    ├── migration/
+    └── seed/
