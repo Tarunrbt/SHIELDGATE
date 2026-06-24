@@ -1,0 +1,8 @@
+{
+  "_id": "ObjectId",
+  "tenantId": "String",
+  "societyId": "String",
+  "messageId": "String",
+  "eventType": "Delivered",
+  "timestamp": "Date"
+}
