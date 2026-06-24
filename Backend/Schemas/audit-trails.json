@@ -1,0 +1,10 @@
+{
+  "_id": "ObjectId",
+  "tenantId": "String",
+  "societyId": "String",
+  "action": "VisitorCreated",
+  "actor": "Resident",
+  "ipAddress": "String",
+  "deviceInfo": "String",
+  "timestamp": "Date"
+}
