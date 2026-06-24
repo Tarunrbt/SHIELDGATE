@@ -1,0 +1,10 @@
+{
+  "_id": "ObjectId",
+  "tenantId": "String",
+  "societyId": "String",
+  "visitorName": "String",
+  "mobile": "Encrypted",
+  "purpose": "String",
+  "photoUrl": "String",
+  "status": "Pending"
+}
