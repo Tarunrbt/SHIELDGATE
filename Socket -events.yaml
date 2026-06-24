@@ -1,0 +1,36 @@
+namespace: /shieldgate
+
+channels:
+
+  VisitorRegistered:
+    payload:
+      tenantId
+      societyId
+      visitorId
+      visitorName
+      timestamp
+
+  ResidentApproved:
+    payload:
+      tenantId
+      societyId
+      approvalId
+      residentId
+      timestamp
+
+  VisitorEntered:
+    payload:
+      tenantId
+      societyId
+      visitorId
+      gateId
+      timestamp
+
+  EmergencyAlert:
+    payload:
+      tenantId
+      societyId
+      alertType
+      severity
+      location
+      timestamp
