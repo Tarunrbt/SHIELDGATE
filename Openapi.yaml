@@ -1,0 +1,96 @@
+openapi: 3.0.0
+
+info:
+  title: ShieldGate v2 API
+  version: 2.0.0
+
+servers:
+  - url: https://api.shieldgate.com/v2
+
+components:
+
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+
+  parameters:
+
+    TenantId:
+      name: tenantId
+      in: header
+      required: true
+      schema:
+        type: string
+
+    SocietyId:
+      name: societyId
+      in: header
+      required: true
+      schema:
+        type: string
+
+paths:
+
+  /auth/request-otp:
+    post:
+      summary: Generate OTP
+
+  /auth/verify-otp:
+    post:
+      summary: Verify OTP and issue JWT
+
+  /visitors/register:
+    post:
+      summary: Register Visitor
+
+  /visitors/{visitorId}:
+    get:
+      summary: Visitor Details
+
+  /approvals/send-whatsapp:
+    post:
+      summary: Send Approval Request
+
+  /approvals/{approvalId}/approve:
+    post:
+      summary: Resident Approval
+
+  /approvals/{approvalId}/reject:
+    post:
+      summary: Resident Rejection
+
+  /passes/generate:
+    post:
+      summary: Generate QR Visitor Pass
+
+  /passes/{passId}:
+    get:
+      summary: QR Pass Details
+
+  /gate/scan:
+    post:
+      summary: QR Scan at Gate
+
+  /entrylogs:
+    get:
+      summary: Entry Logs
+
+  /emergency/raise:
+    post:
+      summary: Raise Emergency Alert
+
+  /analytics/dashboard:
+    get:
+      summary: Dashboard Analytics
+
+  /tenants:
+    get:
+      summary: Tenant List
+
+  /tenants/{tenantId}:
+    get:
+      summary: Tenant Details
+
+security:
+  - BearerAuth: []
