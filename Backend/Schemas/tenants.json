@@ -1,0 +1,8 @@
+{
+  "_id": "ObjectId",
+  "tenantId": "String",
+  "name": "String",
+  "status": "Active",
+  "subscriptionPlan": "Premium",
+  "createdAt": "Date"
+}
