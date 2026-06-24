@@ -1,0 +1,9 @@
+{
+  "_id": "ObjectId",
+  "tenantId": "String",
+  "societyId": "String",
+  "alertType": "Medical",
+  "severity": "High",
+  "location": "String",
+  "status": "Open"
+}
