@@ -1,0 +1,34 @@
+Users
+{
+    _id: ObjectId,
+
+    tenantId: ObjectId | null,
+    societyId: ObjectId | null,
+
+    role: Enum[
+        SUPER_ADMIN,
+        SOCIETY_ADMIN,
+        GUARD,
+        RESIDENT
+    ],
+
+    fullName: String,
+    mobileNumber: String,
+    email: String,
+
+    passwordHash: String | null,
+
+    isMfaEnabled: Boolean,
+
+    accountStatus: Enum[
+        ACTIVE,
+        INACTIVE,
+        LOCKED,
+        SUSPENDED
+    ],
+
+    lastLoginAt: Date,
+
+    createdAt: Date,
+    updatedAt: Date
+}
