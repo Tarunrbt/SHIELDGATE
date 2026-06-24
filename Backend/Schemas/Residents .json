@@ -1,0 +1,11 @@
+{
+  "_id": "ObjectId",
+  "tenantId": "String",
+  "societyId": "String",
+  "flatNumber": "String",
+  "name": "String",
+  "mobile": "Encrypted",
+  "email": "Encrypted",
+  "role": "Resident",
+  "status": "Active"
+}
